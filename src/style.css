@@ -137,29 +137,37 @@ table {
 }
 
 #content {
-  display: grid;
+  display: flex;
   min-height: 100vh;
-  grid-template-rows: 1fr 6fr 0.5fr;
+  flex-direction: column;
 }
 
 header {
   background-color: #f2ebe9;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   font-size: 2.8rem;
   font-weight: 200;
   font-family: var(--poppins);
+  padding: 1rem;
 }
-
 .main-img {
+  width: 230vw;
   background-image: url('./macarons-2548827.jpg');
   background-size: cover;
+  background-position: center;
+}
+
+.main-content {
+  display: flex;
+  flex-grow: 1;
+  background-color: #eddcd9;
 }
 
 main {
-  display: grid;
-  grid-template-columns: 3.5fr 3fr;
+  display: flex;
+  width: 100%;
 }
 
 .main-txt {
@@ -188,9 +196,114 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #264143;
-  color: white;
+  background-color: #f2ebe9;
   font-size: 1.1rem;
   font-family: var(--inter);
   font-weight: 300;
+  padding: 1rem;
+}
+
+.btns {
+  display: flex;
+  gap: 2rem;
+}
+
+button {
+  border: solid black 3px;
+  border-radius: 10px;
+  font-family: var(--inter);
+  font-size: 1.5rem;
+}
+
+button:hover {
+  background-color: #ffd1dc;
+}
+
+/* Start Menu Styling */
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  gap: 2rem;
+  background-color: #eddcd9;
+}
+
+.menu-header-txt {
+  font-size: 2rem;
+  font-family: var(--poppins);
+  padding: 1rem 4rem;
+}
+
+.menu-item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.menu-item-container > div {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #f2ebe9;
+  border-radius: 20px;
+  gap: 1.5rem;
+}
+
+.menu-item-container > div :nth-child(1) {
+  font-size: 2rem;
+  font-family: var(--inter);
+}
+
+.menu-item-container > div :nth-child(2) {
+  font-size: 1.3rem;
+  font-family: var(--poppins);
+  line-height: 1.5;
+}
+
+/* Start Contact Styling */
+
+.contact-main-content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  display: flex;
+  background-color: #f2ebe9;
+  border: dashed 3px grey;
+  border-radius: 15px;
+  width: 35%;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8rem;
+  text-align: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+  font-family: var(--inter);
+}
+
+.contact-heading {
+  font-size: 2.2rem;
+}
+
+.hours {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: var(--inter);
+  font-size: 1.3rem;
+  text-align: center;
 }

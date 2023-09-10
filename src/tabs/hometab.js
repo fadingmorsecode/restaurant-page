@@ -1,9 +1,4 @@
-function homePageLoader() {
-  const header = document.createElement('header');
-  const headerParagraph = document.createElement('p');
-  headerParagraph.textContent = 'Macaron Delights Bistro';
-  header.appendChild(headerParagraph);
-
+const homePageLoader = (() => {
   const main = document.createElement('main');
   const imageContainer = document.createElement('div');
   const mainTextContainer = document.createElement('div');
@@ -27,14 +22,7 @@ function homePageLoader() {
           tradition with innovation to create edible masterpieces. Quality and\
           exceptional experiences define us. Join us on a macaron adventure like\
           no other.";
-
-  const footer = document.createElement('footer');
-  footer.textContent = 'FadingMorseCode';
-
-  const contentLoader = document.querySelector('#content');
-  contentLoader.appendChild(header);
-  contentLoader.appendChild(main);
-  contentLoader.appendChild(footer);
-}
+  return { main };
+})();
 
 export { homePageLoader };
