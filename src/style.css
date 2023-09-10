@@ -136,7 +136,7 @@ table {
   --inter: 'Inter', sans-serif;
 }
 
-body {
+#content {
   display: grid;
   min-height: 100vh;
   grid-template-rows: 1fr 6fr 0.5fr;
