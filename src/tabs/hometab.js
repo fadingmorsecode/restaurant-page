@@ -1,4 +1,6 @@
-const homePageLoader = (() => {
+function homePageLoader() {
+  const content = document.querySelector('#content');
+
   const main = document.createElement('main');
   const imageContainer = document.createElement('div');
   const mainTextContainer = document.createElement('div');
@@ -22,7 +24,8 @@ const homePageLoader = (() => {
           tradition with innovation to create edible masterpieces. Quality and\
           exceptional experiences define us. Join us on a macaron adventure like\
           no other.";
-  return { main };
-})();
+
+  content.appendChild(main);
+}
 
 export { homePageLoader };

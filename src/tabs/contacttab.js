@@ -1,4 +1,6 @@
-const contactPageLoader = (() => {
+function contactPageLoader() {
+  const content = document.querySelector('#content');
+
   const main = document.createElement('div');
   main.classList.add('contact-main-content');
 
@@ -54,7 +56,7 @@ const contactPageLoader = (() => {
   contactContainer.appendChild(contactInfoContainer);
   contactContainer.appendChild(hoursInfo);
 
-  return { main };
-})();
+  content.appendChild(main);
+}
 
 export { contactPageLoader };

@@ -159,15 +159,12 @@ header {
   background-position: center;
 }
 
-.main-content {
-  display: flex;
-  flex-grow: 1;
-  background-color: #eddcd9;
-}
-
 main {
   display: flex;
   width: 100%;
+  display: flex;
+  flex-grow: 1;
+  background-color: #eddcd9;
 }
 
 .main-txt {
@@ -265,6 +262,7 @@ button:hover {
 
 .contact-main-content {
   display: flex;
+  flex-grow: 1;
   width: 100%;
   justify-content: center;
   align-items: center;

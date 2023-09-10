@@ -2,22 +2,24 @@ import './style.css';
 import { headerLoader } from './static elements/header';
 import { footerLoader } from './static elements/footer';
 import { homePageLoader } from './tabs/hometab';
-import { menuPageLoader } from './tabs/menutab';
-import { contactPageLoader } from './tabs/contacttab';
+import { menuEvent } from './tab functionality/menuevent';
+import { contactEvent } from './tab functionality/contactevent';
+import { homeEvent } from './tab functionality/homeevent';
 
-const contentLoader = document.querySelector('#content');
-contentLoader.appendChild(headerLoader.header);
+headerLoader();
+homePageLoader();
+footerLoader();
 
-const mainContent = document.createElement('div');
-mainContent.classList.add('main-content');
-contentLoader.appendChild(mainContent);
+const homeButton = document.querySelector('.home-btn');
+const menuButton = document.querySelector('.menu-btn');
+const contactButton = document.querySelector('.contact-btn');
 
-contentLoader.appendChild(footerLoader.footer);
-
-//mainContent.appendChild(homePageLoader.main);
-//mainContent.appendChild(menuPageLoader.main);
-//mainContent.appendChild(contactPageLoader.main);
-
-// headerLoader.homeTab.addEventListener('click');
-// headerLoader.menuTab.addEventListener('click');
-// headerLoader.contactTab.addEventListener('click');
+homeButton.addEventListener('click', () => {
+  homeEvent();
+});
+menuButton.addEventListener('click', () => {
+  menuEvent();
+});
+contactButton.addEventListener('click', () => {
+  contactEvent();
+});

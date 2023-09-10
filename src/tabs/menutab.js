@@ -1,4 +1,6 @@
-const menuPageLoader = (() => {
+function menuPageLoader() {
+  const content = document.querySelector('#content');
+
   const main = document.createElement('div');
   main.classList.add('menu-content');
 
@@ -38,7 +40,7 @@ const menuPageLoader = (() => {
   menuItemThreeContainer.appendChild(menuItemThreeSubText);
   menuItemContainer.appendChild(menuItemThreeContainer);
 
-  return { main };
-})();
+  content.appendChild(main);
+}
 
 export { menuPageLoader };

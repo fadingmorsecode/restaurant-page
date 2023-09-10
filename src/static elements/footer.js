@@ -1,7 +1,8 @@
-const footerLoader = (() => {
+function footerLoader() {
+  const content = document.querySelector('#content');
   const footer = document.createElement('footer');
   footer.textContent = 'FadingMorseCode';
-  return { footer };
-})();
+  content.appendChild(footer);
+}
 
 export { footerLoader };
