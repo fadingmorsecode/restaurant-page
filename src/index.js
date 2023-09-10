@@ -1,6 +1,6 @@
 import './style.css';
-import { headerLoader } from './static elements/header';
-import { footerLoader } from './static elements/footer';
+import { headerLoader } from './tab functionality/header';
+import { footerLoader } from './tab functionality/footer';
 import { homePageLoader } from './tabs/hometab';
 
 headerLoader();

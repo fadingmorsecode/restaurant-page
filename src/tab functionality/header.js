@@ -1,6 +1,6 @@
-import { menuEvent } from '../tab functionality/menuevent';
-import { homeEvent } from '../tab functionality/homeevent';
-import { contactEvent } from '../tab functionality/contactevent';
+import { menuEvent } from './menuevent';
+import { homeEvent } from './homeevent';
+import { contactEvent } from './contactevent';
 
 function headerLoader() {
   const content = document.querySelector('#content');

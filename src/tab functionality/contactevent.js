@@ -1,6 +1,6 @@
 import { clearFunc } from './clear';
-import { footerLoader } from '../static elements/footer';
-import { headerLoader } from '../static elements/header';
+import { footerLoader } from './footer';
+import { headerLoader } from './header';
 import { contactPageLoader } from '../tabs/contacttab';
 
 function contactEvent() {
