@@ -1,3 +1,7 @@
+import { menuEvent } from '../tab functionality/menuevent';
+import { homeEvent } from '../tab functionality/homeevent';
+import { contactEvent } from '../tab functionality/contactevent';
+
 function headerLoader() {
   const content = document.querySelector('#content');
   const header = document.createElement('header');
@@ -23,6 +27,20 @@ function headerLoader() {
   header.appendChild(buttons);
 
   content.appendChild(header);
+
+  const homeButton = document.querySelector('.home-btn');
+  const menuButton = document.querySelector('.menu-btn');
+  const contactButton = document.querySelector('.contact-btn');
+
+  homeButton.addEventListener('click', () => {
+    homeEvent();
+  });
+  menuButton.addEventListener('click', () => {
+    menuEvent();
+  });
+  contactButton.addEventListener('click', () => {
+    contactEvent();
+  });
 }
 
 export { headerLoader };
