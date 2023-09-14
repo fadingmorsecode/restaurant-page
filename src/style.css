@@ -151,6 +151,9 @@ header {
   font-weight: 200;
   font-family: var(--poppins);
   padding: 1rem;
+  position: sticky;
+  width: 100%;
+  top: 0;
 }
 .main-img {
   width: 230vw;
