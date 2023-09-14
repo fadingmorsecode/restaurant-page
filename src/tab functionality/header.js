@@ -7,6 +7,7 @@ function headerLoader() {
   const header = document.createElement('header');
   const headerParagraph = document.createElement('p');
   headerParagraph.textContent = 'Macaron Delights Bistro';
+  headerParagraph.classList.add('header-txt');
 
   const buttons = document.createElement('div');
   buttons.classList.add('btns');
@@ -32,6 +33,9 @@ function headerLoader() {
   const menuButton = document.querySelector('.menu-btn');
   const contactButton = document.querySelector('.contact-btn');
 
+  headerParagraph.addEventListener('click', () => {
+    homeEvent();
+  });
   homeButton.addEventListener('click', () => {
     homeEvent();
   });
